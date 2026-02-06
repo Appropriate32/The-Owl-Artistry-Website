@@ -31,24 +31,19 @@ nav {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
 }
 
 #nav-logo {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
 .header-left h1 {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-h1 .the-owl {
   color: #d4af37;
   font-size: 1.4rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
   font-weight: 500;
 }
 

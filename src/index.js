@@ -5,8 +5,10 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".nav-links");
 const icon = hamburger.querySelector("i");
 const logoElement = document.querySelector("#nav-logo");
+const faviconLink = document.querySelector("#favicon");
 
 logoElement.src = logoImg;
+faviconLink.href = logoImg;
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("active");
