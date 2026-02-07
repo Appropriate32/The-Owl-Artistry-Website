@@ -207,6 +207,11 @@ nav {
     border: none;
   }
 
+  .nav-links li:first-child,
+  .nav-links li:last-child {
+    padding: 0;
+  }
+
   .home-hero h1 {
     font-size: 5rem;
   }
