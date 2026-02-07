@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cinzel";
 }
 
 body {
   width: 100%;
   height: 100%;
+  font-family: "Cinzel", serif;
 }
 
 a {
@@ -45,16 +45,9 @@ nav {
   color: #d4af37;
   font-size: 1.4rem;
   font-size: 1.4rem;
-  letter-spacing: -1px;
-  font-weight: 500;
-}
-
-h1 .artistry {
-  color: #e8d5b7;
-  font-weight: 480;
-  font-size: 0.9rem;
-  letter-spacing: 6px;
-  display: block;
+  letter-spacing: 0px;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
 }
 
 .hamburger {
@@ -80,15 +73,19 @@ h1 .artistry {
 
 .nav-links li {
   text-align: left;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 1.2rem 2rem;
   border-bottom: 1px solid rgba(222, 160, 60, 0.1);
 }
 
+.nav-links li:last-child {
+  border-bottom: none;
+}
+
 .nav-links li a {
   color: #e8d5b7;
-  font-weight: 0;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
 }
 
 .nav-links li a.active-nav {
@@ -111,15 +108,15 @@ h1 .artistry {
 
 .home-hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 6rem 1rem;
   text-align: center;
   background:
-    linear-gradient(rgba(31, 17, 9, 0.7), rgba(31, 17, 9, 0.7)),
+    linear-gradient(rgba(31, 17, 9, 0.7), rgba(31, 17, 9, 0.9)),
     url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1920&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
@@ -136,13 +133,14 @@ h1 .artistry {
 }
 
 .hero-owl {
-  width: 10%;
-  height: 10%;
-  margin-bottom: 1rem;
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5rem;
   filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
 }
 
 .home-hero .tagline {
+  font-family: "Playfair Display", serif;
   color: #e8d5b7;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -151,8 +149,19 @@ h1 .artistry {
 }
 
 .home-hero .tagline-2 {
+  font-family: "Playfair Display", serif;
   color: #e8d5b7;
   margin-bottom: 2.5rem;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.divider {
+  display: none;
 }
 
 .explore-btn {
@@ -160,10 +169,11 @@ h1 .artistry {
   background-color: #d4af37;
   color: #1f1109;
   font-weight: 500;
-  padding: 15px 35px;
+  padding: 20px 35px;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s background-color;
+  border: none;
 }
 
 .explore-btn:hover {
@@ -198,5 +208,15 @@ h1 .artistry {
   .tagline,
   .tagline-2 {
     font-size: 1.3rem;
+  }
+
+  .home-hero .tagline-2 {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .divider {
+    display: inline;
   }
 }
