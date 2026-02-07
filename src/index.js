@@ -6,9 +6,11 @@ const menu = document.querySelector(".nav-links");
 const icon = hamburger.querySelector("i");
 const logoElement = document.querySelector("#nav-logo");
 const faviconLink = document.querySelector("#favicon");
+const homeOwl = document.querySelector(".hero-owl");
 
 logoElement.src = logoImg;
 faviconLink.href = logoImg;
+homeOwl.src = logoImg;
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("active");

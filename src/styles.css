@@ -16,6 +16,8 @@ a {
   text-decoration: none;
 }
 
+/* Navigation Bar */
+
 nav {
   position: relative;
   width: 100%;
@@ -107,6 +109,68 @@ h1 .artistry {
   color: #d4af37;
 }
 
+.home-hero {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(31, 17, 9, 0.7), rgba(31, 17, 9, 0.7)),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero h1 {
+  font-family: "Great Vibes", cursive;
+  color: #d4af37;
+  font-size: 4rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-owl {
+  width: 10%;
+  height: 10%;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
+}
+
+.home-hero .tagline {
+  color: #e8d5b7;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.4rem;
+  font-style: italic;
+}
+
+.home-hero .tagline-2 {
+  color: #e8d5b7;
+  margin-bottom: 2.5rem;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #1f1109;
+  font-weight: 500;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s background-color;
+}
+
+.explore-btn:hover {
+  cursor: pointer;
+  background-color: #e8d5b7;
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -126,5 +190,13 @@ h1 .artistry {
   .nav-links li {
     padding: 0;
     border: none;
+  }
+
+  .home-hero h1 {
+    font-size: 5rem;
+  }
+  .tagline,
+  .tagline-2 {
+    font-size: 1.3rem;
   }
 }
