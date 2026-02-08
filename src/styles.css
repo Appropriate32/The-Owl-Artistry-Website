@@ -248,6 +248,8 @@ nav {
   -webkit-text-stroke: 1px #d4af37;
 }
 
+/* Featured Products Section */
+
 .featured-section {
   height: auto;
   width: 100%;
@@ -269,14 +271,16 @@ nav {
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 .featured-item {
   border: 1px solid #d4af37;
-  max-width: 350px;
-  padding: 10px;
+  width: 90%;
+  max-width: 400px;
   text-align: left;
   transition: transform 0.3s ease;
+  background-color: transparent;
 }
 
 .featured-item:hover {
@@ -285,18 +289,27 @@ nav {
 
 .featured-item img {
   width: 100%;
-  height: 300px;
+  height: 450px;
   object-fit: cover;
-  margin-bottom: 1rem;
+}
+
+.text-content {
+  background: #1a0f0a;
+  padding: 0.5em;
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .featured-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  padding-bottom: 0.3em;
 }
 
 .featured-item p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   opacity: 0.8;
   line-height: 1.4;
 }
@@ -317,14 +330,14 @@ nav {
   color: #d4af37;
   background-color: #2d1810;
   padding: 1rem 2rem;
-  border: 1px solid #d4af37;
+  border: 2px solid #d4af37;
   cursor: pointer;
   letter-spacing: 2px;
   font-weight: 500;
   transition:
     0.15s background-color,
     0.15s color;
-  margin-top: 1.5em;
+  margin-top: 2.3em;
 }
 
 .featured-section button:hover {
@@ -395,9 +408,13 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    align-items: stretch;
   }
 
   .featured-item {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
