@@ -1,3 +1,10 @@
+:root {
+  --primary-gold: #d4af37;
+  --cream-text: #e8d5b7;
+  --dark-bg: #2d1810;
+  --darker-bg: #1a0f0a;
+}
+
 /* reset */
 
 * {
@@ -22,7 +29,7 @@ nav {
   position: relative;
   width: 100%;
   min-height: 80px;
-  background: #2d1810;
+  background: var(--dark-bg);
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
@@ -42,7 +49,7 @@ nav {
 }
 
 .header-left h1 {
-  color: #d4af37;
+  color: var(--primary-gold);
   font-size: 1.4rem;
   font-size: 1.4rem;
   letter-spacing: 0px;
@@ -63,7 +70,7 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: rgba(45, 24, 16);
+  background-color: var(--dark-bg);
 
   display: none;
   flex-direction: column;
@@ -87,7 +94,7 @@ nav {
 }
 
 .nav-links li a {
-  color: #e8d5b7;
+  color: var(--cream-text);
   font-weight: 400;
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
@@ -95,7 +102,7 @@ nav {
 
 .nav-links li a.active-nav {
   color: #d4af37;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid var(--primary-gold);
   padding-bottom: 5px;
 }
 .nav-links.active {
@@ -108,7 +115,7 @@ nav {
 }
 
 .nav-links li a:not(.active-nav):hover {
-  color: #d4af37;
+  color: var(--primary-gold);
 }
 
 .home-hero {
@@ -129,7 +136,7 @@ nav {
 
 .home-hero h1 {
   font-family: "Great Vibes", cursive;
-  color: #d4af37;
+  color: var(--primary-gold);
   font-size: 4rem;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -146,7 +153,7 @@ nav {
 
 .home-hero .tagline {
   font-family: "Playfair Display", serif;
-  color: #e8d5b7;
+  color: var(--cream-text);
   font-size: 1.1rem;
   letter-spacing: 1px;
   margin-bottom: 1.4rem;
@@ -155,7 +162,7 @@ nav {
 
 .home-hero .tagline-2 {
   font-family: "Playfair Display", serif;
-  color: #e8d5b7;
+  color: var(--cream-text);
   margin-bottom: 2.5rem;
   text-transform: none;
   display: flex;
@@ -171,7 +178,7 @@ nav {
 
 .explore-btn {
   display: inline-block;
-  background-color: #d4af37;
+  background-color: var(--primary-gold);
   color: #1f1109;
   font-weight: 500;
   padding: 20px 35px;
@@ -183,7 +190,7 @@ nav {
 
 .explore-btn:hover {
   cursor: pointer;
-  background-color: #e8d5b7;
+  background-color: var(--cream-text);
 }
 
 /* Craft Home Section */
@@ -191,7 +198,7 @@ nav {
 .our-craft {
   width: 100%;
   height: auto;
-  background: #1a0f0a;
+  background: var(--darker-bg);
   text-align: center;
   display: flex;
   gap: 2em;
@@ -203,7 +210,7 @@ nav {
 }
 
 .craft-heading {
-  color: #d4af37;
+  color: var(--primary-gold);
   font-size: 2rem;
   margin-bottom: 2rem;
   letter-spacing: 2px;
@@ -220,7 +227,7 @@ nav {
 
 .craft-item h2,
 .craft-item p {
-  color: #e8d5b7;
+  color: var(--cream-text);
 }
 
 .craft-item h2 {
@@ -235,7 +242,7 @@ nav {
 .icon-circle {
   width: 70px;
   height: 70px;
-  border: 1px solid #d4af37;
+  border: 1px solid var(--primary-gold);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -243,9 +250,9 @@ nav {
 }
 
 .icon-circle i {
-  color: #1a0f0a;
+  color: var(--darker-bg);
   font-size: 1.8rem;
-  -webkit-text-stroke: 1px #d4af37;
+  -webkit-text-stroke: 1px var(--primary-gold);
 }
 
 /* Featured Products Section */
@@ -253,7 +260,7 @@ nav {
 .featured-section {
   height: auto;
   width: 100%;
-  background: #2d1810;
+  background: var(--dark-bg);
   padding: 4.5rem 1rem;
   text-align: center;
 }
@@ -267,7 +274,7 @@ nav {
 }
 
 .featured-heading {
-  color: #d4af37;
+  color: var(--primary-gold);
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 2rem;
@@ -275,7 +282,7 @@ nav {
 }
 
 .featured-item {
-  border: 1px solid #d4af37;
+  border: 1px solid var(--primary-gold);
   width: 90%;
   max-width: 400px;
   text-align: left;
@@ -294,9 +301,8 @@ nav {
 }
 
 .text-content {
-  background: #1a0f0a;
+  background: var(--darker-bg);
   padding: 0.5em;
-
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -317,7 +323,7 @@ nav {
 .featured-section p,
 .featured-item h3,
 .featured-item p {
-  color: #e8d5b7;
+  color: var(--cream-text);
   font-weight: 300;
 }
 
@@ -327,10 +333,10 @@ nav {
 }
 
 .featured-section button {
-  color: #d4af37;
-  background-color: #2d1810;
+  color: var(--primary-gold);
+  background-color: var(--dark-bg);
   padding: 1rem 2rem;
-  border: 2px solid #d4af37;
+  border: 2px solid var(--primary-gold);
   cursor: pointer;
   letter-spacing: 2px;
   font-weight: 500;
@@ -341,7 +347,7 @@ nav {
 }
 
 .featured-section button:hover {
-  background-color: #d4af37;
+  background-color: var(--primary-gold);
   color: black;
 }
 
