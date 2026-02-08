@@ -59,7 +59,7 @@ nav {
 
 .hamburger {
   font-size: 1.5rem;
-  color: #dea03c;
+  color: var(--primary-gold);
   cursor: pointer;
   display: block;
 }
@@ -71,7 +71,6 @@ nav {
   left: 0;
   width: 100%;
   background-color: var(--dark-bg);
-
   display: none;
   flex-direction: column;
   padding: 1rem 0;
@@ -101,7 +100,7 @@ nav {
 }
 
 .nav-links li a.active-nav {
-  color: #d4af37;
+  color: var(--primary-gold);
   border-bottom: 2px solid var(--primary-gold);
   padding-bottom: 5px;
 }
