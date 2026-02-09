@@ -3,6 +3,7 @@
   --cream-text: #e8d5b7;
   --dark-bg: #2d1810;
   --darker-bg: #1a0f0a;
+  --whatsapp: #20ba5a;
 }
 
 /* reset */
@@ -348,6 +349,50 @@ nav {
 .featured-section button:hover {
   background-color: var(--primary-gold);
   color: black;
+}
+
+/* Contact on Whatsapp */
+
+.contact-section {
+  width: 100%;
+  height: auto;
+  background: var(--darker-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 5.5rem 1rem;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: var(--primary-gold);
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.contact-section p {
+  color: var(--cream-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+.whatsapp-btn {
+  background-color: var(--whatsapp);
+  padding: 1.3rem 2rem;
+  color: white;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background-color 0.2s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20ba5be4;
 }
 
 @media (min-width: 768px) {
