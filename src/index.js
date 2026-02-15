@@ -8,9 +8,17 @@ const logoElement = document.querySelector("#nav-logo");
 const faviconLink = document.querySelector("#favicon");
 const homeOwl = document.querySelector(".hero-owl");
 
-logoElement.src = logoImg;
-faviconLink.href = logoImg;
-homeOwl.src = logoImg;
+if (logoElement) {
+  logoElement.src = logoImg;
+}
+
+if (faviconLink) {
+  faviconLink.href = logoImg;
+}
+
+if (homeOwl) {
+  homeOwl.src = logoImg;
+}
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("active");

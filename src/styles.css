@@ -472,6 +472,10 @@ footer {
   letter-spacing: 1px;
 }
 
+/* =========================================
+   PAGE: PRODUCTS.HTML
+   ========================================= */
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
