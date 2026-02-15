@@ -7,6 +7,7 @@ const icon = hamburger.querySelector("i");
 const logoElement = document.querySelector("#nav-logo");
 const faviconLink = document.querySelector("#favicon");
 const homeOwl = document.querySelector(".hero-owl");
+const filterButtons = document.querySelector(".products-btn-container");
 
 if (logoElement) {
   logoElement.src = logoImg;
@@ -29,6 +30,16 @@ hamburger.addEventListener("click", () => {
   } else {
     icon.classList.remove("fa-times");
     icon.classList.add("fa-bars");
+  }
+});
+
+filterButtons.addEventListener("click", (e) => {
+  if (e.target instanceof HTMLButtonElement) {
+    if (!e.target.classList.contains("active-btn")) {
+      const activeBtn = filterButtons.querySelector(".active-btn");
+      activeBtn.classList.remove("active-btn");
+      e.target.classList.add("active-btn");
+    }
   }
 });
 

@@ -141,7 +141,6 @@ nav {
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-owl {
@@ -475,6 +474,58 @@ footer {
 /* =========================================
    PAGE: PRODUCTS.HTML
    ========================================= */
+
+.products-hero {
+  width: 100%;
+  padding: 4rem 1rem 2rem 1rem;
+  background-color: var(--darker-bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.products-hero h1 {
+  color: var(--primary-gold);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.products-hero p {
+  color: var(--cream-text);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.products-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.products-btn-container button {
+  padding: 8px 25px;
+  font-size: 1.1rem;
+  font-family: "Playfair Display", serif;
+  background-color: var(--darker-bg);
+  border: 1.5px solid #d4af37bb;
+  color: var(--cream-text);
+  transition: all 0.2s ease;
+}
+
+.products-btn-container button:hover {
+  border: 1.5px solid var(--primary-gold);
+}
+
+.products-btn-container button.active-btn {
+  color: var(--darker-bg);
+  background: var(--primary-gold);
+}
 
 @media (min-width: 768px) {
   .hamburger {
