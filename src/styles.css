@@ -527,6 +527,23 @@ footer {
   background: var(--primary-gold);
 }
 
+.products-gallery {
+  background: var(--darker-bg);
+}
+
+.product-card {
+  border: 1.5px solid #d4af37bb;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-card-details {
+  background-color: var(--dark-bg);
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
