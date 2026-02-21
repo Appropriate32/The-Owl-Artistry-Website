@@ -42,15 +42,15 @@
       <h1>Our Collection</h1>
       <p>Handcrafted pieces that blend artistry with functionality</p>
       <div class="products-btn-container">
-        <button class="active-btn">All</button>
-        <button>Doors</button>
-        <button>Frames</button>
-        <button>Decor</button>
-        <button>Custom</button>
+        <button class="filter-btn active-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="doors">Doors</button>
+        <button class="filter-btn" data-filter="frames">Frames</button>
+        <button class="filter-btn" data-filter="decor">Decor</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
       </div>
     </section>
     <section class="products-gallery">
-      <div class="product-card">
+      <div class="product-card" data-category="doors">
         <div class="card-image-container">
           <img
             src="https://i2.pickpik.com/photos/1001/343/722/old-door-arc-beauty-medieval-preview.jpg"
@@ -70,7 +70,7 @@
           </button>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card" data-category="frames">
         <div class="card-image-container">
           <img
             src="https://images.unsplash.com/photo-1763208080988-f24011a00734?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -90,7 +90,7 @@
           </button>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card" data-category="decor">
         <div class="card-image-container">
           <img
             src="https://images.unsplash.com/photo-1762380371793-5a39499dbbab?q=80&w=1866&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -109,7 +109,7 @@
           </button>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card" data-category="frames">
         <div class="card-image-container">
           <img
             src="https://plus.unsplash.com/premium_photo-1770631610452-f4a5ccf755db?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -129,7 +129,7 @@
           </button>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card" data-category="decor">
         <div class="card-image-container">
           <img
             src="https://plus.unsplash.com/premium_photo-1679811677708-0163c0c94c00?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -148,7 +148,7 @@
           </button>
         </div>
       </div>
-      <div class="product-card">
+      <div class="product-card" data-category="custom">
         <div class="card-image-container">
           <img
             src="https://plus.unsplash.com/premium_photo-1682146130176-559777f5452b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

@@ -6,7 +6,10 @@ const menu = document.querySelector(".nav-links");
 const logoElement = document.querySelector("#nav-logo");
 const faviconLink = document.querySelector("#favicon");
 const homeOwl = document.querySelector(".hero-owl");
-const filterButtons = document.querySelector(".products-btn-container");
+const filterButtonsContainer = document.querySelector(
+  ".products-btn-container",
+);
+const productCards = document.querySelectorAll(".product-card");
 
 if (logoElement) {
   logoElement.src = logoImg;
@@ -46,14 +49,27 @@ if (hamburger && menu) {
   });
 }
 
-if (filterButtons) {
-  filterButtons.addEventListener("click", (e) => {
+if (filterButtonsContainer) {
+  filterButtonsContainer.addEventListener("click", (e) => {
     if (e.target instanceof HTMLButtonElement) {
       if (!e.target.classList.contains("active-btn")) {
-        const activeBtn = filterButtons.querySelector(".active-btn");
+        const activeBtn = filterButtonsContainer.querySelector(".active-btn");
         activeBtn.classList.remove("active-btn");
         e.target.classList.add("active-btn");
       }
+
+      const filterValue = e.target.getAttribute("data-filter");
+
+      productCards.forEach((card) => {
+        if (
+          filterValue === "all" ||
+          filterValue === card.getAttribute("data-category")
+        ) {
+          card.classList.remove("hidden-card");
+        } else {
+          card.classList.add("hidden-card");
+        }
+      });
     }
   });
 }

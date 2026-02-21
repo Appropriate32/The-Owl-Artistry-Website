@@ -183,13 +183,16 @@ nav {
 .explore-btn {
   display: inline-block;
   background-color: var(--primary-gold);
-  color: #1f1109;
   font-weight: 500;
   padding: 20px 35px;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s background-color;
   border: none;
+}
+
+.explore-btn a {
+  color: #1f1109;
 }
 
 .explore-btn:hover {
@@ -549,6 +552,10 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: transparent;
+}
+
+.hidden-card {
+  display: none;
 }
 
 .card-image-container {
