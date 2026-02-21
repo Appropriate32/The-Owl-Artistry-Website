@@ -639,6 +639,57 @@ footer {
   background-color: #1ebc57;
 }
 
+.shop-card {
+  width: 100%;
+  background-color: var(--darker-bg);
+  padding: 2rem 0.2rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shop-card-container {
+  background-color: transparent;
+  width: 90%;
+  border: 3px var(--primary-gold) solid;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.shop-card h1 {
+  color: var(--primary-gold);
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.shop-card p {
+  color: var(--cream-text);
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+.shop-card button {
+  font-family: "Playfair display", serif;
+  padding: 1rem 2rem;
+  color: var(--darker-bg);
+  background-color: var(--primary-gold);
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s background-color ease;
+}
+
+.shop-card button:hover {
+  background-color: #f5d774;
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
