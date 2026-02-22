@@ -817,6 +817,46 @@ footer {
   margin-bottom: 1rem;
 }
 
+.we-create {
+  background-color: var(--darker-bg);
+  padding: 2rem 1rem;
+}
+
+.we-create h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: var(--primary-gold);
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.create-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.create-item {
+  border-left: 4px solid var(--primary-gold);
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.create-item h3,
+.create-item p {
+  color: var(--cream-text);
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -920,5 +960,9 @@ footer {
 
   .meet-artist img {
     width: 50%;
+  }
+
+  .create-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
