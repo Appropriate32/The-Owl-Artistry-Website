@@ -17,6 +17,10 @@ module.exports = {
       filename: "products.html",
       template: "./src/products.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./src/about.html",
+    }),
     new MiniCssExtractPlugin(),
   ],
   module: {
