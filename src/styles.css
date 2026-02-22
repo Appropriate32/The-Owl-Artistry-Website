@@ -690,6 +690,28 @@ footer {
   background-color: #f5d774;
 }
 
+.about-heading {
+  background-color: var(--darker-bg);
+  text-align: center;
+  padding: 4rem;
+}
+
+.about-heading h1 {
+  color: var(--primary-gold);
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-heading p {
+  color: var(--cream-text);
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
