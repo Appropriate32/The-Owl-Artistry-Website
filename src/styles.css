@@ -965,6 +965,66 @@ footer {
   background-color: #20ba5bb7;
 }
 
+.contact-header {
+  background-color: var(--darker-bg);
+  text-align: center;
+  padding: 4rem 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.contact-header h1 {
+  color: var(--primary-gold);
+  font-weight: 100;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.contact-header p {
+  color: var(--cream-text);
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  background-color: var(--darker-bg);
+  padding: 4rem 1rem;
+  padding-top: 2rem;
+}
+
+.contact-info h1 {
+  color: var(--primary-gold);
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: left;
+  font-size: 2.3rem;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-item {
+  display: flex;
+}
+
+.contact-info-text h3 {
+  color: var(--cream-text);
+  font-weight: 100;
+}
+
+.contact-info-text p {
+  color: var(--cream-text);
+}
+
+.contact-info-text h5 {
+  color: var(--primary-gold);
+  font-weight: 100;
+}
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
